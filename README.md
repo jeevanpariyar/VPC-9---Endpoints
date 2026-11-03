@@ -165,7 +165,7 @@ After updating my public subnet's route table, my terminal could return the obje
 
 An endpoint policy is a resource-based policy attached to a VPC Endpoint that controls which AWS resources and actions can be accessed through that endpoint.
 
-For example, an S3 Gateway Endpoint policy can allow or deny access to specific S3 buckets and operations, such as listing or uploading files. It adds an extra layer of access control to my VPC Endpoint..
+For example, an S3 Gateway Endpoint policy can allow or deny access to specific S3 buckets and operations, such as listing or uploading files. It adds an extra layer of access control to my VPC Endpoint.
 
 I went to VPC → Endpoints, selected my S3 Gateway Endpoint, and edited its endpoint policy. I changed the policy's \`Effect\` from \`Allow\` to \`Deny\` and tested access from my EC2 instance. The S3 access request failed with an Access Denied error. I then changed it back to \`Allow\`, restoring access to my S3 bucket through the endpoint.
 
